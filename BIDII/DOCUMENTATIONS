@@ -1,0 +1,17 @@
+DOCUMENTATION OF FUNCTIONALITIES I HAVE IMPLEMENTED ON BIDIBUILD
+
+1 DISPLAYING PROJECT TILE ON EVERY PAGE
+   The project title (ProjectNamePane.js) is a smart component which is being displayed or not based on the current route. Whiles on the      	projects view itself, this title will not be shown because there is no selected project at that moment. The component renders all projects from the database and filters for the current/selected project using it's id set in the componentDidMount() of all components where it is required except on the projects component itselt. The selected project's id is set when a project item is clicked on 
+
+   Location
+     ProjectsNamePane.js is a shared file which can be traced at src/components/Shared/js/panes/projectNamePane.js. 
+
+2. DELETING MULTIPLE TASKS
+   This functionality allows a user to be able to select and delete multiple tasks on a single click. This is impleted on the Tasks.js component
+   
+   The default tasks view presents tasks in groups. To be able to select and delete multiple projects, a user needs to stwitch the task view to 
+   the normal table view(ungrouped tasks) first. This is done by clicking on the task view toggle button at the right of the 'add task icon' on 
+   the tasks property pane where all task action icons are located.
+   
+
+
